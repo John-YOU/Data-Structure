@@ -9,7 +9,6 @@
 //  Created by youhan on 4/10/17.
 //  Copyright © 2017 youhan. All rights reserved.
 //
-//要比较所有后缀的最长公共前缀，如果有此前缀则至少出现两次，因此可以直接由hight数组去最大值输出
 #include <string.h>
 #include <stdio.h>
 #include <algorithm>
@@ -19,7 +18,6 @@ using namespace std;
 int length;
 char current[maxi];
 //find repetition in AGCT array, at least two times, SA
-//分别比较两个关键字
 int ranks[maxi],wb[maxi],wv[maxi],wss[maxi],height[maxi];
 
 bool cmp(int *r,int a,int b,int l){
@@ -67,7 +65,7 @@ int main(int argc, const char * argv[]) {
         r[length]=0;//IMPORTANT
         da(r, sa, length+1, 27);
         calcuHeight(sa, r);
-        // rank[i] : suffix(i)排第几; sa[i] : 排在第i个的是谁
+        // rank[i] : the rank of suffix(i); sa[i] : the one that ranks at i
         int max_value=0;
         for (int i=1;i<=length;i++)
             max_value=max(height[i],max_value);

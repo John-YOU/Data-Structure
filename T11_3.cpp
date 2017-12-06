@@ -2,6 +2,10 @@
      This program was written for a suffix array problem when I took the course Advanced Programming in Semester B of 2016/2017.
      I spent a lot of time understanding this algorithm and implementing it. I think it's really cool so I chose it 
      as the sample code for my application:) The problem is available at UVa online judge(UVa 11512).
+
+     The cpp file is also available here: https://github.com/John-YOU/Data-Structure/blob/master/T11_3.cpp 
+
+     Thank you for your time!
 /*/
 //
 //  main.cpp
